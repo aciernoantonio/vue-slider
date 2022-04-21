@@ -20,7 +20,7 @@
 
                 <div class="main_cover">
 
-                    <img :src="" alt="">
+                    <img :src="places[activeImage].image" alt="">
 
                     <div class="info">
 
@@ -38,11 +38,11 @@
 
                 <div class="thumbnails">
 
-                    <img src="./assets/img/01.jpg" alt="" class="thumb">
-                    <img src="./assets/img/02.jpg" alt="" class="thumb">
-                    <img src="./assets/img/03.jpg" alt="" class="thumb">
-                    <img src="./assets/img/04.jpg" alt="" class="thumb">
-                    <img src="./assets/img/05.jpg" alt="" class="thumb">
+                    <img :src="places[0].image" alt="" class="thumb">
+                    <img :src="places[1].image" alt="" class="thumb">
+                    <img :src="places[2].image" alt="" class="thumb">
+                    <img :src="places[3].image" alt="" class="thumb">
+                    <img :src="places[4].image" alt="" class="thumb">
 
                 </div>
 
