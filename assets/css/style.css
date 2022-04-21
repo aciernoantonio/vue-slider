@@ -3,3 +3,38 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.container{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    position: relative;
+}
+
+.main_cover{
+    width: 80%;
+}
+
+.main_cover img{
+    height: 100%;
+}
+
+.thumbnails{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    filter: brightness(0.7);
+}
+
+.thumb{
+    height: calc(100% / 5);
+}
