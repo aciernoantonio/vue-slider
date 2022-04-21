@@ -22,6 +22,15 @@ img{
 
 .main_cover{
     width: 80%;
+    position: relative;
+}
+
+.info{
+    position: absolute;
+    color: white;
+    top: 80%;
+    text-align: right;
+    padding: 0 1rem;
 }
 
 .main_cover img{
