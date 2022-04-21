@@ -38,11 +38,7 @@
 
                 <div class="thumbnails">
 
-                    <img :src="places[0].image" alt="" class="thumb">
-                    <img :src="places[1].image" alt="" class="thumb">
-                    <img :src="places[2].image" alt="" class="thumb">
-                    <img :src="places[3].image" alt="" class="thumb">
-                    <img :src="places[4].image" alt="" class="thumb">
+                    <img :src="thumb.image" alt="" v-for="(thumb, index) in places" class="thumb">
 
                 </div>
 
