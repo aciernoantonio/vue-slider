@@ -29,6 +29,7 @@ img{
     position: absolute;
     color: white;
     top: 80%;
+    right: 0;
     text-align: right;
     padding: 0 1rem;
 }
@@ -63,4 +64,8 @@ img{
     justify-content: space-between;
     height: 100%;
     padding: 0.5rem;
+}
+
+.active{
+    border: 5px solid white;
 }

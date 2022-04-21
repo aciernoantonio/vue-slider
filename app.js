@@ -5,6 +5,7 @@ const app = new Vue({
     data: {
 
         activeImage: 0,
+        active: `active`,
 
        places: [
         {
@@ -35,6 +36,23 @@ const app = new Vue({
     ]
     },
 
-    methods: {}
+    methods: {
+       prev(){
+
+        if(this.activeImage === 0){
+           this.activeImage = 5;
+        }
+        this.activeImage-- 
+       }, 
+
+       next(){
+           console.log(`hai cliccato next`);
+           this.activeImage++
+
+           if(this.activeImage === 5){
+               this.activeImage = 0;
+           }
+       }
+    }
 
 })

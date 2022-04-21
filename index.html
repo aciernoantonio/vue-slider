@@ -25,9 +25,9 @@
                     <div class="info">
 
                       
-                    <h2 class="title">Svezia</h2>
+                    <h2 class="title">{{places[activeImage].title}}</h2>
 
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus rem tenetur perspiciatis nostrum quos veritatis architecto et cupiditate adipisci, consectetur laudantium aspernatur tempora itaque ipsam? Quisquam rerum harum laudantium ea?</p>
+                    <p>{{places[activeImage].text}}</p>
 
                 </div>
 
@@ -38,14 +38,14 @@
 
                 <div class="thumbnails">
 
-                    <img :src="thumb.image" alt="" v-for="(thumb, index) in places" class="thumb">
+                    <img :src="thumb.image" alt="" v-for="(thumb, index) in places" class="thumb" :class="places[activeImage].image == thumb.image ? `active` : ``">
 
                 </div>
 
                 <div class="navigator">
 
-                    <div class="prev"><i class="fa-solid fa-angle-up fa-lg"></i></div>
-                    <div class="next"><i class="fa-solid fa-angle-down fa-lg"></i></div>
+                    <div @click="prev" class="prev"><i class="fa-solid fa-angle-up fa-lg"></i></div>
+                    <div @click="next" class="next"><i class="fa-solid fa-angle-down fa-lg"></i></div>
 
                 </div>
 
